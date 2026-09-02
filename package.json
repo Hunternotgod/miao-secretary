@@ -1,0 +1,61 @@
+{
+  "name": "miao-secretary",
+  "private": true,
+  "version": "1.0.0",
+  "description": "喵秘书 - 微信群通知智能整理助手",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri",
+    "tauri:dev": "tauri dev",
+    "tauri:build": "tauri build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css,md}\"",
+    "test": "vitest",
+    "test:ui": "vitest --ui"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.27.0",
+    "@tanstack/react-query": "^5.59.0",
+    "lucide-react": "^0.453.0",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.5.4",
+    "zod": "^3.23.8",
+    "react-hook-form": "^7.53.0",
+    "@hookform/resolvers": "^3.9.0",
+    "date-fns": "^4.1.0",
+    "dexie": "^4.4.5"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.1.0",
+    "@tauri-apps/api": "^2.1.1",
+    "@tauri-apps/plugin-dialog": "^2.0.1",
+    "@tauri-apps/plugin-fs": "^2.0.2",
+    "@tauri-apps/plugin-shell": "^2.0.1",
+    "@tauri-apps/plugin-sql": "^2.0.1",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.2",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.8",
+    "tailwindcss": "^3.4.13",
+    "postcss": "^8.4.47",
+    "autoprefixer": "^10.4.20",
+    "vitest": "^2.1.2",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/jest-dom": "^6.5.0",
+    "jsdom": "^25.0.1",
+    "eslint": "^9.12.0",
+    "@typescript-eslint/parser": "^8.8.0",
+    "@typescript-eslint/eslint-plugin": "^8.8.0",
+    "prettier": "^3.3.3"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  }
+}

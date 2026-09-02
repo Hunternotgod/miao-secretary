@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>喵秘书 · 微信群消息 → 群日报 → 时间线</title>
+<meta name="description" content="开源桌面应用,自动整理微信群消息,AI 生成群日报,关键信息一条不漏。" />
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; }
+  .gradient-bg { background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 50%, #fecaca 100%); }
+  .ascii-frame {
+    background: #1f2937;
+    color: #d1d5db;
+    border-radius: 8px;
+    padding: 16px;
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas, monospace;
+    font-size: 12px;
+    line-height: 1.6;
+    overflow-x: auto;
+    white-space: pre;
+  }
+  .ascii-frame .key { color: #fbbf24; }
+  .ascii-frame .val { color: #86efac; }
+  .ascii-frame .dim { color: #6b7280; }
+  .ascii-frame .warn { color: #fb923c; }
+  .ascii-frame .ok { color: #34d399; }
+</style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<!-- Hero -->
+<section class="gradient-bg">
+  <div class="max-w-5xl mx-auto px-6 py-20 text-center">
+    <img src="../src-tauri/icons/icon.png" alt="喵秘书" class="w-24 h-24 mx-auto mb-4" />
+    <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-4">喵秘书</h1>
+    <p class="text-xl md:text-2xl text-gray-700 mb-2">微信群消息 → 群日报 → 时间线</p>
+    <p class="text-lg text-gray-600 mb-8">群聊不再刷屏,关键消息一条不漏</p>
+    <div class="flex gap-4 justify-center flex-wrap">
+      <a href="https://gitee.com/fat-cat-barbecue/miao-secretary/releases"
+         class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
+        下载 Windows 版
+      </a>
+      <a href="../README.md"
+         class="inline-block bg-white hover:bg-gray-100 text-gray-800 font-semibold px-8 py-3 rounded-lg shadow-md transition">
+        查看源码
+      </a>
+    </div>
+    <p class="text-sm text-gray-500 mt-4">开源 · MIT · 本机处理,数据不出电脑</p>
+  </div>
+</section>
+
+<!-- 痛点 -->
+<section class="bg-white py-16">
+  <div class="max-w-5xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">你也有这些烦恼吗?</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-orange-50 rounded-lg p-6">
+        <div class="text-3xl mb-3">📢</div>
+        <h3 class="font-semibold mb-2">班级群通知刷屏</h3>
+        <p class="text-sm text-gray-600">调课、作业截止、活动报名 —— 藏在 99+ 条消息里,等你看到已经过期。</p>
+      </div>
+      <div class="bg-yellow-50 rounded-lg p-6">
+        <div class="text-3xl mb-3">👥</div>
+        <h3 class="font-semibold mb-2">十几个群来回切</h3>
+        <p class="text-sm text-gray-600">工作群 / 兴趣群 / 家人群 / 课程群 —— 一天下来眼睛累,信息还漏。</p>
+      </div>
+      <div class="bg-red-50 rounded-lg p-6">
+        <div class="text-3xl mb-3">⏰</div>
+        <h3 class="font-semibold mb-2">关键信息散落各处</h3>
+        <p class="text-sm text-gray-600">时间、地点、报名链接 —— 想回头找,得手动翻聊天记录。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 解决方案 -->
+<section class="bg-gray-100 py-16">
+  <div class="max-w-5xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-4">喵秘书怎么解决</h2>
+    <p class="text-center text-gray-600 mb-12">三步,微信群消息自动整理成结构化日报</p>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="text-center">
+        <div class="bg-orange-500 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">1</div>
+        <h3 class="font-semibold mb-2 text-lg">读</h3>
+        <p class="text-sm text-gray-600">自动读取 PC 微信中的群消息<br/>按群归类、生成日报<br/><span class="text-xs text-gray-500">数据只在本机处理</span></p>
+      </div>
+      <div class="text-center">
+        <div class="bg-orange-500 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">2</div>
+        <h3 class="font-semibold mb-2 text-lg">整</h3>
+        <p class="text-sm text-gray-600">AI 把几十条消息浓缩成 5 行<br/>自动提取时间、地点、链接<br/><span class="text-xs text-gray-500">支持 DeepSeek / 智谱 / MiniMax 等 8 家</span></p>
+      </div>
+      <div class="text-center">
+        <div class="bg-orange-500 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">3</div>
+        <h3 class="font-semibold mb-2 text-lg">存</h3>
+        <p class="text-sm text-gray-600">每群一份日报,存入时间线<br/>所有历史日报统一管理<br/><span class="text-xs text-gray-500">可检索 · 可回看 · 可导出</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 截图占位(ASCII mockup) -->
+<section class="bg-white py-16">
+  <div class="max-w-5xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">界面预览</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- Mockup 1: 群日报视图 -->
+      <div>
+        <h3 class="font-semibold mb-3 text-gray-700">📋 群日报视图</h3>
+        <div class="ascii-frame"><span class="dim">┌─ 喵秘书 · 群日报 ──────────────────┐</span>
+<span class="dim">│</span>  <span class="key">群名</span>: <span class="val">计科 2023 级通知群</span>
+<span class="dim">│</span>  <span class="key">时段</span>: <span class="val">2026-09-01 08:00 → 23:59</span>
+<span class="dim">│</span>  <span class="key">消息数</span>: <span class="val">47 条 → 5 条要点</span>
+<span class="dim">│</span>
+<span class="dim">│</span>  <span class="warn">⚠ 紧急</span>
+<span class="dim">│</span>  · <span class="val">9/3 前交《操作系统》实验报告</span>
+<span class="dim">│</span>    截止: <span class="key">9/3 23:59</span>  提交: 教务系统
+<span class="dim">│</span>
+<span class="dim">│</span>  <span class="warn">📌 重要</span>
+<span class="dim">│</span>  · 周三 14:00 改到 <span class="key">A 楼 301</span>(原 B 楼)
+<span class="dim">│</span>  · ACM 校赛报名截止 <span class="key">9/5</span>,队长群报名
+<span class="dim">│</span>
+<span class="dim">│</span>  <span class="dim">ℹ 一般</span>
+<span class="dim">│</span>  · 王老师推荐一篇 OS 论文(已附链接)
+<span class="dim">│</span>  · 宿舍空调缴费提醒
+<span class="dim">│</span>
+<span class="dim">│</span>  <span class="ok">[查看原文] [导出] [分享]</span>
+<span class="dim">└──────────────────────────────────────┘</span></div>
+      </div>
+
+      <!-- Mockup 2: 错误条 + 倒计时重试 -->
+      <div>
+        <h3 class="font-semibold mb-3 text-gray-700">⚡ 智能重试(错误条)</h3>
+        <div class="ascii-frame"><span class="dim">┌─ 喵秘书 · 主界面 ──────────────────┐</span>
+<span class="dim">│</span>
+<span class="dim">│</span>  <span class="key">[群列表]</span>  <span class="key">[生成日报]</span>  <span class="key">[时间线]</span>
+<span class="dim">│</span>
+<span class="dim">│</span>  <span class="warn">⚠ 后端连接失败(5 秒后自动重试...)</span>
+<span class="dim">│</span>  <span class="dim">   ████████░░ 4/5  [取消]</span>
+<span class="dim">│</span>
+<span class="dim">│</span>  <span class="dim">--- 群列表 ---</span>
+<span class="dim">│</span>  ☑ 计科 2023 级通知群      47 条新
+<span class="dim">│</span>  ☑ 算法竞赛备战群          12 条新
+<span class="dim">│</span>  ☐ 室友吹水群              89 条新
+<span class="dim">│</span>  ☐ 二手交易                 3 条新
+<span class="dim">│</span>
+<span class="dim">│</span>  <span class="ok">[生成 2 个群的日报]</span>
+<span class="dim">└──────────────────────────────────────┘</span></div>
+        <p class="text-xs text-gray-500 mt-2">5xx / 超时 / 拒连 → 黄色条 5 秒倒计时自动重试;4xx / 启动超时 → 红色固定文案</p>
+      </div>
+
+    </div>
+    <p class="text-center text-sm text-gray-500 mt-8">真实截图待补</p>
+  </div>
+</section>
+
+<!-- 适用场景 -->
+<section class="bg-gray-100 py-16">
+  <div class="max-w-5xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">适合谁用</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="bg-white rounded-lg p-5 shadow-sm">
+        <div class="text-2xl mb-2">🎓</div>
+        <h3 class="font-semibold mb-1">大学生</h3>
+        <p class="text-xs text-gray-600">班级群通知、选课群、活动群 —— 一键看重点</p>
+      </div>
+      <div class="bg-white rounded-lg p-5 shadow-sm">
+        <div class="text-2xl mb-2">👨‍💼</div>
+        <h3 class="font-semibold mb-1">项目协作</h3>
+        <p class="text-xs text-gray-600">团队群、甲方群、供应商群 —— 不漏关键决策</p>
+      </div>
+      <div class="bg-white rounded-lg p-5 shadow-sm">
+        <div class="text-2xl mb-2">👨‍👩‍👧</div>
+        <h3 class="font-semibold mb-1">家长 / 群主</h3>
+        <p class="text-xs text-gray-600">家长群、业主群 —— 自动整理公告、忽略闲聊</p>
+      </div>
+      <div class="bg-white rounded-lg p-5 shadow-sm">
+        <div class="text-2xl mb-2">🏃</div>
+        <h3 class="font-semibold mb-1">社群运营</h3>
+        <p class="text-xs text-gray-600">读书群、跑步群、兴趣群 —— 关键信息归档可查</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 技术架构 -->
+<section class="bg-white py-16">
+  <div class="max-w-5xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">技术架构</h2>
+    <div class="bg-gray-50 rounded-lg p-8">
+      <div class="grid md:grid-cols-3 gap-6 text-center">
+        <div>
+          <div class="text-3xl mb-2">🖥️</div>
+          <h3 class="font-semibold mb-1">桌面壳</h3>
+          <p class="text-xs text-gray-600">Tauri 2.0<br/>(Rust + WebView)</p>
+        </div>
+        <div>
+          <div class="text-3xl mb-2">⚛️</div>
+          <h3 class="font-semibold mb-1">前端</h3>
+          <p class="text-xs text-gray-600">React 18 + TypeScript<br/>Vite + Tailwind</p>
+        </div>
+        <div>
+          <div class="text-3xl mb-2">🐍</div>
+          <h3 class="font-semibold mb-1">后端</h3>
+          <p class="text-xs text-gray-600">本地数据通道(闭源)<br/>官方发布版内置</p>
+        </div>
+      </div>
+      <div class="mt-6 text-center text-sm text-gray-600">
+        AI 层 · OpenAI 兼容协议 · DeepSeek / 智谱 / MiniMax / OpenAI / Moonshot / SiliconFlow / Ollama / 自定义
+      </div>
+      <div class="mt-2 text-center text-xs text-gray-500">
+        所有数据只在本机处理 · 聊天内容不会离开你的电脑
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 下载 -->
+<section class="gradient-bg py-16">
+  <div class="max-w-3xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-4">开始使用</h2>
+    <p class="text-gray-700 mb-8">下载、安装、生成第一份日报 —— 3 分钟搞定</p>
+    <div class="flex gap-4 justify-center flex-wrap mb-6">
+      <a href="https://gitee.com/fat-cat-barbecue/miao-secretary/releases"
+         class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
+        下载 Windows 安装包
+      </a>
+      <a href="../README.md#-从源码开发"
+         class="inline-block bg-white hover:bg-gray-100 text-gray-800 font-semibold px-8 py-3 rounded-lg shadow-md transition">
+        从源码构建
+      </a>
+    </div>
+    <p class="text-sm text-gray-600">
+      支持平台:Windows + 微信 PC 4.x(含 4.1)
+    </p>
+    <p class="text-sm text-gray-600 mt-1">
+      微信数据通道为闭源组件，仅随官方 Windows 安装包提供
+    </p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-400 py-8">
+  <div class="max-w-5xl mx-auto px-6 text-center text-sm">
+    <p>🐱 喵秘书 · MiaoSecretary · MIT License</p>
+    <p class="mt-2">
+      <a href="https://gitee.com/fat-cat-barbecue/miao-secretary" class="hover:text-white">Gitee</a> ·
+      <a href="../README.md" class="hover:text-white">README</a>
+    </p>
+    <p class="mt-4 text-xs text-gray-500">仅供学习研究使用 · 请勿用于侵犯他人隐私</p>
+  </div>
+</footer>
+
+</body>
+</html>
