@@ -1,5 +1,5 @@
 # 🐱 喵秘书 (MiaoSecretary)
-##  :link: 下载链接:https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v1.0.0/%E5%96%B5%E7%A7%98%E4%B9%A6_1.0.0_x64-setup.exe
+##  :link: 下载链接: https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v1.0.0/%E5%96%B5%E7%A7%98%E4%B9%A6_1.0.0_x64-setup.exe
 
 > **PC 微信群消息 → AI 群日报 → 时间线** —— 群聊不再刷屏，关键消息一条不漏。
 
