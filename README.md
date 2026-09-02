@@ -8,6 +8,7 @@
 [![Version](https://img.shields.io/badge/Version-1.0.0-green)](https://gitee.com/fat-cat-barbecue/miao-secretary/releases)
 
 ## 这是什么
+![喵秘书](docs/tupian.png)
 
 喵秘书是一款桌面应用，帮 PC 微信用户把群消息整理成「群日报 + 时间线」：
 
@@ -25,6 +26,15 @@
 - **PC 微信本地聊天记录的读取通道是闭源组件**，不包含在本仓库中，本仓库也不会提供其实现细节或相关文档。
 - 官方发布的 Windows 安装包内置该通道，可直接从 [Releases](https://gitee.com/fat-cat-barbecue/miao-secretary/releases) 下载体验完整功能。
 - 从源码自行构建时，微信数据通道会显示「不可用 / 未连接」；其余功能（AI 配置、AI 规则、时间线等）不受影响。
+
+##  :santa:  图片展示
+
+![1](docs/1.jpg)
+![2](docs/2.jpg)
+![3](docs/3.jpg)
+![4](docs/4.jpg)
+![5](docs/5.jpg)
+![6](docs/6.jpg)
 
 ## 🚀 从源码开发
 
