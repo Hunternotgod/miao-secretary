@@ -26,17 +26,35 @@ jobs:
       TAG: ${{ inputs.tag || github.ref_name }}
       PRERELEASE: ${{ inputs.prerelease || false }}
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_REPO: ${{ github.repository }}
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
       - name: Download Gitee installer
         shell: bash
         run: |
           set -euo pipefail
           version="${TAG#v}"
           asset="喵秘书_${version}_x64-setup.exe"
-          encoded="%E5%96%B5%E7%A7%98%E4%B9%A6_${version}_x64-setup.exe"
-          url="https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/${TAG}/${encoded}"
+          api="https://gitee.com/api/v5/repos/fat-cat-barbecue/miao-secretary/releases?per_page=100"
+          curl --fail --silent --show-error --location --retry 5 --retry-all-errors \
+            --connect-timeout 30 --max-time 180 \
+            -A "Mozilla/5.0 MiaoSecretary-Release-Mirror" "$api" -o releases.json
+          url=$(jq -r --arg tag "$TAG" '.[] | select(.tag_name == $tag) | .assets[] | select(.name | endswith("x64-setup.exe")) | .browser_download_url' releases.json | head -n 1)
+          notes=$(jq -r --arg tag "$TAG" '.[] | select(.tag_name == $tag) | .body // ""' releases.json)
+          if [ -z "$url" ] || [ "$url" = "null" ]; then
+            echo "No installer found in Gitee release ${TAG}" >&2
+            exit 1
+          fi
+          printf '%s\n' "$notes" > release-notes.md
           echo "Downloading ${url}"
-          curl --fail --location --retry 3 "$url" --output "$asset"
+          curl --fail --location --retry 5 --retry-all-errors \
+            --connect-timeout 30 --max-time 600 \
+            -A "Mozilla/5.0 MiaoSecretary-Release-Mirror" \
+            "$url" --output "$asset"
           ls -lh "$asset"
 
       - name: Create or update GitHub Release
@@ -48,7 +66,7 @@ jobs:
           if gh release view "$TAG" >/dev/null 2>&1; then
             gh release upload "$TAG" "$asset" --clobber
           else
-            args=(release create "$TAG" "$asset" --title "喵秘书 ${TAG}" --notes "Synced from Gitee Release ${TAG}")
+            args=(release create "$TAG" "$asset" --title "喵秘书 ${TAG}" --notes-file release-notes.md --verify-tag)
             if [ "${PRERELEASE}" = "true" ]; then
               args+=(--prerelease)
             else
