@@ -1,0 +1,58 @@
+name: Sync Gitee Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag, for example v1.2.2"
+        required: true
+        type: string
+      prerelease:
+        description: "Publish as prerelease"
+        required: false
+        default: false
+        type: boolean
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    env:
+      TAG: ${{ inputs.tag || github.ref_name }}
+      PRERELEASE: ${{ inputs.prerelease || false }}
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Download Gitee installer
+        shell: bash
+        run: |
+          set -euo pipefail
+          version="${TAG#v}"
+          asset="喵秘书_${version}_x64-setup.exe"
+          encoded="%E5%96%B5%E7%A7%98%E4%B9%A6_${version}_x64-setup.exe"
+          url="https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/${TAG}/${encoded}"
+          echo "Downloading ${url}"
+          curl --fail --location --retry 3 "$url" --output "$asset"
+          ls -lh "$asset"
+
+      - name: Create or update GitHub Release
+        shell: bash
+        run: |
+          set -euo pipefail
+          version="${TAG#v}"
+          asset="喵秘书_${version}_x64-setup.exe"
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" "$asset" --clobber
+          else
+            args=(release create "$TAG" "$asset" --title "喵秘书 ${TAG}" --notes "Synced from Gitee Release ${TAG}")
+            if [ "${PRERELEASE}" = "true" ]; then
+              args+=(--prerelease)
+            else
+              args+=(--latest)
+            fi
+            gh "${args[@]}"
+          fi
