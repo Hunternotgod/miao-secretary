@@ -2,8 +2,7 @@
 
 ## :link: 版本下载
 
-- **稳定版 v1.0.5**：[下载稳定版](https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v1.0.5/%E5%96%B5%E7%A7%98%E4%B9%A6_1.0.5_x64-setup.exe)
-- **测试版 v1.2.1**：[下载测试版](https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v1.2.1/%E5%96%B5%E7%A7%98%E4%B9%A6_1.2.1_x64-setup.exe)
+- **最新版 v1.2.2（稳定版）**：[下载最新版](https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v1.2.2/%E5%96%B5%E7%A7%98%E4%B9%A6_1.2.2_x64-setup.exe)
 
 历史版本请见 [Releases](https://gitee.com/fat-cat-barbecue/miao-secretary/releases)。
 
@@ -11,7 +10,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Platform: Windows](https://img.shields.io/badge/Platform-Windows-blue)](https://gitee.com/fat-cat-barbecue/miao-secretary)
-[![Version](https://img.shields.io/badge/Version-1.2.1%20test-blue)](https://gitee.com/fat-cat-barbecue/miao-secretary/releases)
+[![Version](https://img.shields.io/badge/Version-1.2.2%20stable-green)](https://gitee.com/fat-cat-barbecue/miao-secretary/releases)
 
 ## 这是什么
 ![喵秘书](docs/tupian.png)
@@ -26,7 +25,7 @@
 
 > **核心场景**：班级群通知、社团活动、课程变更、招聘推送 —— 这些「不看会死，看了又烦」的消息，喵秘书替你筛。
 
-## v1.2.1 测试版更新
+## v1.2.2 最新版更新
 
 - 点击 Windows 通知可定位到对应通知原文；
 - 自动解析截止时间并生成待办提醒；
@@ -34,9 +33,13 @@
 - 新增稳定版 / 测试版双更新通道；
 - 新增本地滚动日志和一键诊断文件导出；
 - 修复导出诊断文件时的文件系统 ACL 权限错误；
+- 系统通知改用 Windows 原生 Toast，并支持点击定位；
+- AI 待办、@我和最近新通知可触发系统通知；
+- 提醒时间支持自定义年月日时分秒；
+- 诊断文件增加通知设置、监控、缓存和前端异常快照；
 - 保留托盘、系统通知、免打扰、开机自启和自动更新能力。
 
-> v1.2.1 当前作为测试版发布，v1.0.5 仍保留为稳定版。
+> v1.2.2 为当前最新版，也是推荐使用的稳定版。
 
 ## 微信数据通道说明（重要）
 

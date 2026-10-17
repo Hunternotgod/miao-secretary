@@ -1,11 +1,11 @@
 {
-  "version": "1.0.5",
-  "notes": "喵秘书 v1.0.5\n\n- 修复微信通道初始化 isatty 报错\n- 新增软件内自动检查与安装更新\n- 安装/升级前自动结束后台 miao-backend.exe\n- 关于页更新为当前版本公告并新增作者邮箱\n- 侧边栏和关于页显示真实版本号\n\n安装完成后应用会自动重启。",
-  "pub_date": "2026-10-17T12:25:35Z",
+  "version": "1.2.2",
+  "notes": "喵秘书 v1.2.2 最新稳定版\n\n- 系统通知改为 Windows 原生 Toast，显示与点击更可靠\n- AI 待办、@我和最近 2 小时新通知可触发提醒\n- 提醒时间支持自定义年月日时分秒\n- 新增应用内通知兜底提示\n- 诊断文件增加通知设置、监控、缓存和前端异常快照\n- 修复诊断导出 ACL 权限错误",
+  "pub_date": "2026-10-17T14:55:32Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTNG9SYUZiZHRzcFlETExaWUlkRDh0WXAwN1dyVC94aHR5VjFqSWFCUlIwbjRDU1dTTFB0bFgvTThnS1NuVk5QTHhlaEs1US9PdWZEL1lqYnJaTHJFcnZJcTd0UlI4encwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMjM5OTM1CWZpbGU65Za156eY5LmmXzEuMC41X3g2NC1zZXR1cC5leGUKaHZHZWVJcFZYWStyVytOWGFOQTRBNTFIM0lZK1dkYnorWnhNUzdsNzlraVNOcFBLWlFBT09YK28vVU9VQnNVV0x6UEVmV1dXTUZkQjN2MXdjVzFaQnc9PQo=",
-      "url": "https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v1.0.5/%E5%96%B5%E7%A7%98%E4%B9%A6_1.0.5_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTNG9SYUZiZHRzcFJhMW5reldPVnV3VDNOWklDTkZSamNxY1BxQzZ5TllHTnpNZzdKZWU3bjkzeUdEU3l6T3ljT2ZsR29HdUdLS0JRb1FBa2pVUjJxdU51Tnlubjd5ckFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMjQ4OTMyCWZpbGU65Za156eY5LmmXzEuMi4yX3g2NC1zZXR1cC5leGUKWCtEZ3AzaGx5YmUrc050SWpMUFBxenZWN3VMcGpoeVdaMytXN2NzVTlaODlaV3F3dEpNT3JSVlh5ajdKd2F1RkFUVVE3a0IyNmF6R1E0QjN5WnRkQUE9PQo=",
+      "url": "https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v1.2.2/%E5%96%B5%E7%A7%98%E4%B9%A6_1.2.2_x64-setup.exe"
     }
   }
 }
