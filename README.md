@@ -2,7 +2,7 @@
 
 ## :link: 版本下载
 
-- **最新版 v1.2.3（稳定版）**：[下载最新版](https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v1.2.3/%E5%96%B5%E7%A7%98%E4%B9%A6_1.2.3_x64-setup.exe)
+- **最新版 v2.0.1（稳定版）**：[下载最新版](https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v2.0.1/%E5%96%B5%E7%A7%98%E4%B9%A6_2.0.1_x64-setup.exe)
 
 历史版本请见 [Releases](https://gitee.com/fat-cat-barbecue/miao-secretary/releases)。
 
@@ -10,7 +10,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Platform: Windows](https://img.shields.io/badge/Platform-Windows-blue)](https://gitee.com/fat-cat-barbecue/miao-secretary)
-[![Version](https://img.shields.io/badge/Version-1.2.3%20stable-green)](https://gitee.com/fat-cat-barbecue/miao-secretary/releases)
+[![Version](https://img.shields.io/badge/Version-2.0.1%20stable-green)](https://gitee.com/fat-cat-barbecue/miao-secretary/releases)
 
 ## 这是什么
 ![喵秘书](docs/tupian.png)
@@ -25,18 +25,19 @@
 
 > **核心场景**：班级群通知、社团活动、课程变更、招聘推送 —— 这些「不看会死，看了又烦」的消息，喵秘书替你筛。
 
-## v1.2.3 最新版更新
+## v2.0.1 最新版更新
 
-- 数据源改为单一主面板，会话列表固定高度滚动，新增联系人和群聊浏览；
-- 监控列表改为「监控中 / 添加监控」双页签，高级同步设置收进展开面板；
-- 移除无效的「AI 规则」模块，重新整理 AI 配置布局；
-- 诊断工具移到「数据」页，修复「重置全部」没有清理 IndexedDB 的问题；
-- 关于页更新公告默认展开，更新通道统一为「稳定版 / 最新版」；
-- Ollama 和自定义 AI 服务现在可以不填 API Key；
-- 修复部分群漏显示、监控状态不刷新、设置页切换保留滚动位置等问题；
-- 通知定位、截止提醒、托盘、免打扰和自动更新能力继续保留。
+- 首次同步优先展示最近 24 小时，后台按时间倒序逐段回补历史；
+- 实时轮询增加轻量活跃度检查，无变化群不再重复完整扫描；
+- AI 多事件分段校验、失败重试、逐消息降级和日期冲突保护；
+- 新增低置信度「待确认」、用户确认、AI 准确/不准确反馈和样本导出；
+- 用户标记待办后内容自动冻结，后续新消息生成独立记录；
+- 同批消息中的游戏、聚餐等不同话题会先做确定性拆分，再交给 AI；
+- 待办、待回复、完成和忽略改为消息级平铺，支持撤销与通知深链高亮；
+- 每个监控可选择「所有新消息」或「仅重要 / 待办 / @我」通知策略；
+- IndexedDB 升级到 v4，增加安全去重、数据库删除保护、AI 反馈和数据统计。
 
-> v1.2.3 为当前最新版，也是推荐使用的稳定版。
+> v2.0.1 为当前最新版，也是推荐使用的稳定版。
 
 ## 微信数据通道说明（重要）
 
