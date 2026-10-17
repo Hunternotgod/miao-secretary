@@ -1,0 +1,11 @@
+{
+  "version": "1.2.0",
+  "notes": "喵秘书 v1.2.0 测试版\n\n- 点击系统通知定位到对应原文\n- 截止时间解析、本地提醒和稍后提醒\n- 待办完成与完成时间记录\n- 稳定版/测试版双更新通道\n- 本地日志和一键诊断导出",
+  "pub_date": "2026-10-17T14:27:53Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTNG9SYUZiZHRzcGFYVkZyaVFiWTVFMnpla1hDMFpiTVpLa013V21ZM2psOFgxOHZSNktjWWZnNXJMYUxTOHo4UGszclU2WWI1Kzd4ZEdUZlNGQ1FRbi9hUFpwczRaRWdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMjQ3MjczCWZpbGU65Za156eY5LmmXzEuMi4wX3g2NC1zZXR1cC5leGUKV3pIbXZnNEFyWTRrRUN3WU5ZTk5reHg5czlMZnZieXFmWVNxSDkySmxnWXZLUXdta0JIMjdTVy9RSFBGeHlYUk5zZUNpUmc1NE5LRlJMdjFiNXhmQVE9PQo=",
+      "url": "https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v1.2.0/%E5%96%B5%E7%A7%98%E4%B9%A6_1.2.0_x64-setup.exe"
+    }
+  }
+}

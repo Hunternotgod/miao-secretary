@@ -1,11 +1,11 @@
 {
-  "version": "1.1.0",
-  "notes": "喵秘书 v1.1.0 测试版\n\n- 新增系统托盘，关闭窗口后继续后台监控\n- 托盘菜单和提示显示待处理数量\n- 新增 Windows 重要/紧急系统通知\n- 支持夜间免打扰和紧急通知穿透\n- 支持开机自启与启动后驻留托盘\n- 新增单实例运行和退出时后端清理",
-  "pub_date": "2026-10-17T13:47:21Z",
+  "version": "1.0.5",
+  "notes": "喵秘书 v1.0.5\n\n- 修复微信通道初始化 isatty 报错\n- 新增软件内自动检查与安装更新\n- 安装/升级前自动结束后台 miao-backend.exe\n- 关于页更新为当前版本公告并新增作者邮箱\n- 侧边栏和关于页显示真实版本号\n\n安装完成后应用会自动重启。",
+  "pub_date": "2026-10-17T12:25:35Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTNG9SYUZiZHRzcFVnUXY2STRUc2Q4YnYyWnRNdXRHMlJEMjRqeEVDU2NIMFhBcElrUFZua2lpc2R5UG9sb3lHZGo5ZTZUc0QweHN3YnVVSVRNdll0TklLdFVvRlJwcFFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMjQ0ODQxCWZpbGU65Za156eY5LmmXzEuMS4wX3g2NC1zZXR1cC5leGUKdjFQdnVISUJJYTdobnFpYnZXUGQzdFhsaDkrZGIxTUJOa053SFk0ZWxKcTBWRE9YK20vbTJLYktMejdvYnZNb05FYW9CK1J2NVZ0Nld1eExnZFNlREE9PQo=",
-      "url": "https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v1.1.0/%E5%96%B5%E7%A7%98%E4%B9%A6_1.1.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTNG9SYUZiZHRzcFlETExaWUlkRDh0WXAwN1dyVC94aHR5VjFqSWFCUlIwbjRDU1dTTFB0bFgvTThnS1NuVk5QTHhlaEs1US9PdWZEL1lqYnJaTHJFcnZJcTd0UlI4encwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMjM5OTM1CWZpbGU65Za156eY5LmmXzEuMC41X3g2NC1zZXR1cC5leGUKaHZHZWVJcFZYWStyVytOWGFOQTRBNTFIM0lZK1dkYnorWnhNUzdsNzlraVNOcFBLWlFBT09YK28vVU9VQnNVV0x6UEVmV1dXTUZkQjN2MXdjVzFaQnc9PQo=",
+      "url": "https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v1.0.5/%E5%96%B5%E7%A7%98%E4%B9%A6_1.0.5_x64-setup.exe"
     }
   }
 }
