@@ -1,11 +1,11 @@
 {
-  "version": "1.2.2",
-  "notes": "喵秘书 v1.2.2 最新稳定版\n\n- 系统通知改为 Windows 原生 Toast，显示与点击更可靠\n- AI 待办、@我和最近 2 小时新通知可触发提醒\n- 提醒时间支持自定义年月日时分秒\n- 新增应用内通知兜底提示\n- 诊断文件增加通知设置、监控、缓存和前端异常快照\n- 修复诊断导出 ACL 权限错误",
-  "pub_date": "2026-10-17T14:55:32Z",
+  "version": "1.2.3",
+  "notes": "喵秘书 v1.2.3 最新版\n\n- 数据源与监控列表 UI 重做，增加联系人和群聊浏览\n- 监控列表改为「监控中 / 添加监控」双页签，高级设置收进展开面板\n- 移除无效的 AI 规则模块，重新整理 AI 配置布局\n- 诊断工具移到数据页，修复重置全部未清理 IndexedDB\n- 关于页更新公告默认展开，更新通道统一为稳定版 / 最新版\n- Ollama 和自定义 AI 服务可以不填 API Key\n- 修复部分群漏显示、监控状态不刷新、设置页切换保留滚动位置等问题",
+  "pub_date": "2026-10-17T17:58:06Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTNG9SYUZiZHRzcFJhMW5reldPVnV3VDNOWklDTkZSamNxY1BxQzZ5TllHTnpNZzdKZWU3bjkzeUdEU3l6T3ljT2ZsR29HdUdLS0JRb1FBa2pVUjJxdU51Tnlubjd5ckFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMjQ4OTMyCWZpbGU65Za156eY5LmmXzEuMi4yX3g2NC1zZXR1cC5leGUKWCtEZ3AzaGx5YmUrc050SWpMUFBxenZWN3VMcGpoeVdaMytXN2NzVTlaODlaV3F3dEpNT3JSVlh5ajdKd2F1RkFUVVE3a0IyNmF6R1E0QjN5WnRkQUE9PQo=",
-      "url": "https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v1.2.2/%E5%96%B5%E7%A7%98%E4%B9%A6_1.2.2_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTNG9SYUZiZHRzcFN5Ti9JNGxaczRYWFAweHUycWxINXVFRkhsQ1F2dlhHVFRPWWx2ODBZNnk5ZHIwRUJiQjE2aHEzYzM2VGpjZS9VOTVHcWgyMDU4SE5ZUnBXNDRjWEFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMjU5NDY3CWZpbGU65Za156eY5LmmXzEuMi4zX3g2NC1zZXR1cC5leGUKYUlvNlJBdHFhdWFpaWdybHFKeUxqQmJvYi9vbHMzSDZ3N2o3TW1ZWHlPZFFnRlZjRlJ3YTByUzYzcnpQMXNQK2huZ29Ja0RNYnlHZUlranlsVFh0Qnc9PQo=",
+      "url": "https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v1.2.3/%E5%96%B5%E7%A7%98%E4%B9%A6_1.2.3_x64-setup.exe"
     }
   }
 }

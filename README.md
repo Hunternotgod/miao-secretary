@@ -2,7 +2,7 @@
 
 ## :link: 版本下载
 
-- **最新版 v1.2.2（稳定版）**：[下载最新版](https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v1.2.2/%E5%96%B5%E7%A7%98%E4%B9%A6_1.2.2_x64-setup.exe)
+- **最新版 v1.2.3（稳定版）**：[下载最新版](https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v1.2.3/%E5%96%B5%E7%A7%98%E4%B9%A6_1.2.3_x64-setup.exe)
 
 历史版本请见 [Releases](https://gitee.com/fat-cat-barbecue/miao-secretary/releases)。
 
@@ -10,7 +10,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Platform: Windows](https://img.shields.io/badge/Platform-Windows-blue)](https://gitee.com/fat-cat-barbecue/miao-secretary)
-[![Version](https://img.shields.io/badge/Version-1.2.2%20stable-green)](https://gitee.com/fat-cat-barbecue/miao-secretary/releases)
+[![Version](https://img.shields.io/badge/Version-1.2.3%20stable-green)](https://gitee.com/fat-cat-barbecue/miao-secretary/releases)
 
 ## 这是什么
 ![喵秘书](docs/tupian.png)
@@ -25,28 +25,25 @@
 
 > **核心场景**：班级群通知、社团活动、课程变更、招聘推送 —— 这些「不看会死，看了又烦」的消息，喵秘书替你筛。
 
-## v1.2.2 最新版更新
+## v1.2.3 最新版更新
 
-- 点击 Windows 通知可定位到对应通知原文；
-- 自动解析截止时间并生成待办提醒；
-- 支持稍后 10 分钟、1 小时提醒和完成时间记录；
-- 新增稳定版 / 测试版双更新通道；
-- 新增本地滚动日志和一键诊断文件导出；
-- 修复导出诊断文件时的文件系统 ACL 权限错误；
-- 系统通知改用 Windows 原生 Toast，并支持点击定位；
-- AI 待办、@我和最近新通知可触发系统通知；
-- 提醒时间支持自定义年月日时分秒；
-- 诊断文件增加通知设置、监控、缓存和前端异常快照；
-- 保留托盘、系统通知、免打扰、开机自启和自动更新能力。
+- 数据源改为单一主面板，会话列表固定高度滚动，新增联系人和群聊浏览；
+- 监控列表改为「监控中 / 添加监控」双页签，高级同步设置收进展开面板；
+- 移除无效的「AI 规则」模块，重新整理 AI 配置布局；
+- 诊断工具移到「数据」页，修复「重置全部」没有清理 IndexedDB 的问题；
+- 关于页更新公告默认展开，更新通道统一为「稳定版 / 最新版」；
+- Ollama 和自定义 AI 服务现在可以不填 API Key；
+- 修复部分群漏显示、监控状态不刷新、设置页切换保留滚动位置等问题；
+- 通知定位、截止提醒、托盘、免打扰和自动更新能力继续保留。
 
-> v1.2.2 为当前最新版，也是推荐使用的稳定版。
+> v1.2.3 为当前最新版，也是推荐使用的稳定版。
 
 ## 微信数据通道说明（重要）
 
 - 本仓库公开的是**可开源的部分**：桌面 UI、AI 服务适配、日报/时间线、监控与设置等。
 - **PC 微信本地聊天记录的读取通道是闭源组件**，不包含在本仓库中，本仓库也不会提供其实现细节或相关文档。
 - 官方发布的 Windows 安装包内置该通道，可直接从 [Releases](https://gitee.com/fat-cat-barbecue/miao-secretary/releases) 下载体验完整功能。
-- 从源码自行构建时，微信数据通道会显示「不可用 / 未连接」；其余功能（AI 配置、AI 规则、时间线等）不受影响。
+- 从源码自行构建时，微信数据通道会显示「不可用 / 未连接」；其余功能（AI 配置、时间线等）不受影响。
 
 ##  :santa:  图片展示
 
