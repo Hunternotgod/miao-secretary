@@ -1,11 +1,17 @@
 # 🐱 喵秘书 (MiaoSecretary)
-##  :link: 下载链接: https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v1.0.5/%E5%96%B5%E7%A7%98%E4%B9%A6_1.0.5_x64-setup.exe
+
+## :link: 版本下载
+
+- **稳定版 v1.0.5**：[下载稳定版](https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v1.0.5/%E5%96%B5%E7%A7%98%E4%B9%A6_1.0.5_x64-setup.exe)
+- **测试版 v1.1.0**：[下载测试版](https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v1.1.0/%E5%96%B5%E7%A7%98%E4%B9%A6_1.1.0_x64-setup.exe)
+
+历史版本请见 [Releases](https://gitee.com/fat-cat-barbecue/miao-secretary/releases)。
 
 > **PC 微信群消息 → AI 群日报 → 时间线** —— 群聊不再刷屏，关键消息一条不漏。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Platform: Windows](https://img.shields.io/badge/Platform-Windows-blue)](https://gitee.com/fat-cat-barbecue/miao-secretary)
-[![Version](https://img.shields.io/badge/Version-1.0.0-green)](https://gitee.com/fat-cat-barbecue/miao-secretary/releases)
+[![Version](https://img.shields.io/badge/Version-1.1.0%20test-blue)](https://gitee.com/fat-cat-barbecue/miao-secretary/releases)
 
 ## 这是什么
 ![喵秘书](docs/tupian.png)
@@ -19,6 +25,18 @@
 - 🛡️ **数据只在本机处理** —— 没有服务器，不收集任何东西
 
 > **核心场景**：班级群通知、社团活动、课程变更、招聘推送 —— 这些「不看会死，看了又烦」的消息，喵秘书替你筛。
+
+## v1.1.0 测试版更新
+
+- 新增系统托盘，关闭窗口后后台监控继续运行；
+- 托盘菜单和 Tooltip 显示待处理数量；
+- 新增 Windows 重要/紧急系统通知；
+- 支持夜间免打扰和紧急通知穿透；
+- 支持开机自启并驻留托盘；
+- 新增单实例运行和托盘退出清理；
+- 保留软件内自动更新能力。
+
+> v1.1.0 当前作为测试版发布，v1.0.5 仍保留为稳定版。
 
 ## 微信数据通道说明（重要）
 
