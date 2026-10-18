@@ -2,49 +2,45 @@
 
 ## :link: 版本下载
 
-- **最新版 v2.0.1（稳定版）**：[下载最新版](https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v2.0.1/%E5%96%B5%E7%A7%98%E4%B9%A6_2.0.1_x64-setup.exe)
+- **最新版 v2.0.2（稳定版）**：[下载最新版](https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v2.0.2/miao-secretary_2.0.2_x64-setup.exe)
 
 历史版本请见 [Releases](https://gitee.com/fat-cat-barbecue/miao-secretary/releases)。
 
-> **PC 微信群消息 → AI 群日报 → 时间线** —— 群聊不再刷屏，关键消息一条不漏。
+> **微信群消息 → 智能整理 → 微信消息** —— 群聊不再刷屏，关键信息一条不漏。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Platform: Windows](https://img.shields.io/badge/Platform-Windows-blue)](https://gitee.com/fat-cat-barbecue/miao-secretary)
-[![Version](https://img.shields.io/badge/Version-2.0.1%20stable-green)](https://gitee.com/fat-cat-barbecue/miao-secretary/releases)
+[![Version](https://img.shields.io/badge/Version-2.0.2%20stable-green)](https://gitee.com/fat-cat-barbecue/miao-secretary/releases)
 
 ## 这是什么
 ![喵秘书](docs/tupian.png)
 
-喵秘书是一款桌面应用，帮 PC 微信用户把群消息整理成「群日报 + 时间线」：
+喵秘书是一款桌面应用，帮 PC 微信用户把群消息整理成清晰的「整理结果」：
 
-- 📝 **AI 生成群日报** —— 每个群一份，几十条消息浓缩成几条要点
+- 📝 **AI 整理群消息** —— 自动提取重点、待办和关键信息
 - ⏰ **关键信息自动提取** —— 时间 / 地点 / 截止日期 / 链接，结构化呈现
-- 📚 **日报存入时间线** —— 所有日报统一管理，可检索可回看
-- 🔁 **半实时同步** —— 定时轮询 + 手动触发，最新消息不遗漏
-- 🛡️ **数据只在本机处理** —— 没有服务器，不收集任何东西
+- 📚 **整理结果集中查看** —— 所有群的整理结果统一管理，可检索可回看
+- 🔁 **自动同步** —— 新消息自动同步，也可以手动立即同步
+- 🛡️ **微信记录仅本机读取** —— 分析时只把消息文本发送给你选择的 AI 服务
 
 > **核心场景**：班级群通知、社团活动、课程变更、招聘推送 —— 这些「不看会死，看了又烦」的消息，喵秘书替你筛。
 
-## v2.0.1 最新版更新
+## v2.0.2 最新版更新
 
-- 首次同步优先展示最近 24 小时，后台按时间倒序逐段回补历史；
-- 实时轮询增加轻量活跃度检查，无变化群不再重复完整扫描；
-- AI 多事件分段校验、失败重试、逐消息降级和日期冲突保护；
-- 新增低置信度「待确认」、用户确认、AI 准确/不准确反馈和样本导出；
-- 用户标记待办后内容自动冻结，后续新消息生成独立记录；
-- 同批消息中的游戏、聚餐等不同话题会先做确定性拆分，再交给 AI；
-- 待办、待回复、完成和忽略改为消息级平铺，支持撤销与通知深链高亮；
-- 每个监控可选择「所有新消息」或「仅重要 / 待办 / @我」通知策略；
-- IndexedDB 升级到 v4，增加安全去重、数据库删除保护、AI 反馈和数据统计。
+- 启动时发现新版本会弹窗提示，可直接查看更新说明并下载安装；
+- 统一导航、按钮、状态和隐私说明，减少英文和技术术语；
+- 微信消息页支持一键同步新消息；
+- 自动同步和微信连接页的按钮名称与实际操作保持一致；
+- 优化错误提示和更新公告。
 
-> v2.0.1 为当前最新版，也是推荐使用的稳定版。
+> v2.0.2 为当前最新版，也是推荐使用的稳定版。
 
-## 微信数据通道说明（重要）
+## 微信连接说明（重要）
 
-- 本仓库公开的是**可开源的部分**：桌面 UI、AI 服务适配、日报/时间线、监控与设置等。
+- 本仓库公开的是**可开源的部分**：桌面 UI、AI 服务适配、整理结果、自动同步与设置等。
 - **PC 微信本地聊天记录的读取通道是闭源组件**，不包含在本仓库中，本仓库也不会提供其实现细节或相关文档。
 - 官方发布的 Windows 安装包内置该通道，可直接从 [Releases](https://gitee.com/fat-cat-barbecue/miao-secretary/releases) 下载体验完整功能。
-- 从源码自行构建时，微信数据通道会显示「不可用 / 未连接」；其余功能（AI 配置、时间线等）不受影响。
+- 从源码自行构建时，微信连接会显示「不可用 / 未连接」；其余功能（AI 配置、微信消息等）不受影响。
 
 ##  :santa:  图片展示
 
@@ -156,4 +152,3 @@ miao-secretary/
 
 ## 请肥猫叉烧喝杯奶茶
 ![输入图片说明](%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE%E6%89%93%E8%B5%8F%E6%94%B6%E6%AC%BE.jpg)
-

@@ -1,11 +1,11 @@
 {
-  "version": "2.0.1",
-  "notes": "喵秘书 v2.0.1 稳定版\n\n- 首次同步优先展示最近 24 小时，后台逐段回补历史\n- 实时轮询增加会话活跃度检查，无变化群不再完整扫描\n- AI 多事件分段重试、逐消息降级与日期冲突保护\n- 新增低置信度「待确认」、用户确认和 AI 反馈样本导出\n- 用户标记待办后内容冻结，新消息生成独立后续记录\n- 确定性拆分同批消息中的不同话题，避免游戏/聚餐被合并\n- 待办、待回复、完成和忽略改为消息级平铺，支持撤销和深链高亮\n- 每个监控支持「所有新消息」或「仅重要 / 待办 / @我」通知策略\n- IndexedDB v4：安全去重、删除保护、AI 反馈与数据统计",
-  "pub_date": "2026-10-17T20:22:03Z",
+  "version": "2.0.2",
+  "notes": "喵秘书 v2.0.2\n\n- 启动时发现新版本会弹窗提示，可直接查看更新说明并下载安装\n- 统一界面导航、按钮、状态和隐私说明，减少英文和技术术语\n- 微信消息页支持一键同步新消息\n- 自动同步和微信连接页的按钮名称与实际操作保持一致\n- 优化错误提示和更新公告",
+  "pub_date": "2026-10-18T07:31:05Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTNG9SYUZiZHRzcGZNS1pzNlhZenhBckY0MVVxNHhsQmxFRXpBN0NFN2F2TnB3Q1Zic3lYWk1zdGtPOGpxMGhoV3JJVEVGb1BQUnpTUTF4R3lDZmxIZzh1VS9tS3R2bndnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMjY4NTAzCWZpbGU65Za156eY5LmmXzIuMC4xX3g2NC1zZXR1cC5leGUKam5lemxvK2dTOVEvMWdTT2VlNmlqQU9LVDVUYTJIRW5sdVhNditVYUVDRW82TkVyc0drWmJNVkI3WngxNTNxendBSDJmaHZIcWF6T0VYL1dQNm1iQWc9PQo=",
-      "url": "https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v2.0.1/%E5%96%B5%E7%A7%98%E4%B9%A6_2.0.1_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTNG9SYUZiZHRzcFJ1cDlGYzdHZ1IzNUJsN1BiOGwzL2Q5RkhMMXNFcXlKZWNRM1c1dmsreWhpUUFFNExsVnBsLyt2cm05NDRUKzNlSG8xeHRMZW1Yazdma3RyTjVsY0E4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMzA4NTMxCWZpbGU65Za156eY5LmmXzIuMC4yX3g2NC1zZXR1cC5leGUKYjF5RGhJOVFzMldwYithNCt6QUhQWG1VbXc2WU12UHZOMGc2MU12QmVoQ0Vnc21scUY0U1VxNWpERE5kazBwSm44NG9WYlRTcVdQYU42SjE3Qy9MQUE9PQo=",
+      "url": "https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v2.0.2/miao-secretary_2.0.2_x64-setup.exe"
     }
   }
 }
