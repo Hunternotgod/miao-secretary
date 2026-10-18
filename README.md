@@ -48,10 +48,10 @@
 
 ##  :santa:  图片展示
 
-![1](docs/1.png)
-![2](docs/2.png)
-![3](docs/3.png)
-![4](docs/4.png)
+![1](docs/1.png?v=20261018-2)
+![2](docs/2.png?v=20261018-2)
+![3](docs/3.png?v=20261018-2)
+![4](docs/4.png?v=20261018-2)
 ![5](docs/5.png)
 ![6](docs/6.png)
 ![7](docs/7.png)
