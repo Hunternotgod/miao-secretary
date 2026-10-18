@@ -2,7 +2,7 @@
 
 ## :link: 版本下载
 
-- **最新版 v2.0.2（稳定版）**：[下载最新版](https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v2.0.2/miao-secretary_2.0.2_x64-setup.exe)
+- **最新版 v2.1.0（稳定版）**：[下载最新版](https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v2.1.0/miao-secretary_2.1.0_x64-setup.exe)
 
 历史版本请见 [Releases](https://gitee.com/fat-cat-barbecue/miao-secretary/releases)。
 
@@ -10,7 +10,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Platform: Windows](https://img.shields.io/badge/Platform-Windows-blue)](https://gitee.com/fat-cat-barbecue/miao-secretary)
-[![Version](https://img.shields.io/badge/Version-2.0.2%20stable-green)](https://gitee.com/fat-cat-barbecue/miao-secretary/releases)
+[![Version](https://img.shields.io/badge/Version-2.1.0%20stable-green)](https://gitee.com/fat-cat-barbecue/miao-secretary/releases)
 
 ## 这是什么
 ![喵秘书](docs/tupian.png)
@@ -25,15 +25,19 @@
 
 > **核心场景**：班级群通知、社团活动、课程变更、招聘推送 —— 这些「不看会死，看了又烦」的消息，喵秘书替你筛。
 
-## v2.0.2 最新版更新
+## v2.1.0 最新版更新
 
-- 启动时发现新版本会弹窗提示，可直接查看更新说明并下载安装；
-- 统一导航、按钮、状态和隐私说明，减少英文和技术术语；
-- 微信消息页支持一键同步新消息；
-- 自动同步和微信连接页的按钮名称与实际操作保持一致；
-- 优化错误提示和更新公告。
+- 今日必看与微信消息的待办 / 完成 / 待回复标记实时绑定；
+- 微信消息把「已标记待回复」和「AI 建议回复」分栏，计数与今日必看对齐；
+- AI 建议、@我和普通话题留在微信消息，不直接进入今日必看；
+- 微信消息单会话话题按日分组，默认只展开今天，其他日期和更早话题收起分页；
+- 锁定事件的变更先确认，不再自动改写标题、时间、地点和提醒；
+- 今日必看增加筛选、批量完成/忽略、最近处理和标题纠正；
+- 修复确认框、诊断导出、侧车端口和 WebView2 恢复问题；
+- AI API Key 迁移到 Windows 凭据管理器；
+- 历史数据支持按 30/90/180 天手动清理。
 
-> v2.0.2 为当前最新版，也是推荐使用的稳定版。
+> v2.1.0 为当前最新版，也是推荐使用的稳定版。
 
 ## 微信连接说明（重要）
 

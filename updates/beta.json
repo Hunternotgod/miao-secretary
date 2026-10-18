@@ -1,11 +1,11 @@
 {
-  "version": "2.0.2",
-  "notes": "喵秘书 v2.0.2\n\n- 启动时发现新版本会弹窗提示，可直接查看更新说明并下载安装\n- 统一界面导航、按钮、状态和隐私说明，减少英文和技术术语\n- 微信消息页支持一键同步新消息\n- 自动同步和微信连接页的按钮名称与实际操作保持一致\n- 优化错误提示和更新公告",
-  "pub_date": "2026-10-18T07:31:05Z",
+  "version": "2.1.0",
+  "notes": "喵秘书 v2.1.0\n\n- 今日必看与微信消息的待办/完成/待回复标记实时绑定\n- 微信消息把「已标记待回复」和「AI 建议回复」分栏，计数与今日必看对齐\n- AI 建议、@我和普通话题留在微信消息，不直接进入今日必看\n- AI 建议待办进入微信消息的「待确认」区，用户确认后才进入今日必看\n- 微信消息单会话话题按日分组，默认只展开今天，其他日期和更早话题收起分页\n- 锁定事件的变更先确认，不再自动改写标题、时间、地点和提醒\n- 微信消息会话卡优先展示活跃待办，后发普通话题不会顶替待办\n- 今日必看增加筛选、批量完成/忽略、最近处理和标题纠正\n- 修复确认框、诊断导出、侧车端口和 WebView2 恢复问题\n- AI API Key 迁移到 Windows 凭据管理器\n- 历史数据支持按 30/90/180 天手动清理",
+  "pub_date": "2026-10-18T11:07:37Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTNG9SYUZiZHRzcFJ1cDlGYzdHZ1IzNUJsN1BiOGwzL2Q5RkhMMXNFcXlKZWNRM1c1dmsreWhpUUFFNExsVnBsLyt2cm05NDRUKzNlSG8xeHRMZW1Yazdma3RyTjVsY0E4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMzA4NTMxCWZpbGU65Za156eY5LmmXzIuMC4yX3g2NC1zZXR1cC5leGUKYjF5RGhJOVFzMldwYithNCt6QUhQWG1VbXc2WU12UHZOMGc2MU12QmVoQ0Vnc21scUY0U1VxNWpERE5kazBwSm44NG9WYlRTcVdQYU42SjE3Qy9MQUE9PQo=",
-      "url": "https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v2.0.2/miao-secretary_2.0.2_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTNG9SYUZiZHRzcGJ1eDR5b2p1TmIrUXFXZHFGTEpiRWc4NGRsWEpQcG9PNjFXdDBZVXN5Z1c2ZmlzWWJ4MDl4OVpINXUwdlJkSGpWRWFsc25JS0JXa25XZnNFWUg4UlFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMzIxNjQ0CWZpbGU65Za156eY5LmmXzIuMS4wX3g2NC1zZXR1cC5leGUKV3NZRm5mV2w2T2N2TnI0YmJlL0VxUTRzdVJEWGFwOE9HYzhkZGR2bUtINTA3WU1oeGRJVFdFWm9adGJEd1RCa1Z4WThFNzhMSDdySG9zOFNWdGdlQ3c9PQo=",
+      "url": "https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v2.1.0/miao-secretary_2.1.0_x64-setup.exe"
     }
   }
 }
