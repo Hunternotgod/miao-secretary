@@ -1,11 +1,11 @@
 {
-  "version": "2.1.0",
-  "notes": "喵秘书 v2.1.0\n\n- 今日必看与微信消息的待办/完成/待回复标记实时绑定\n- 微信消息把「已标记待回复」和「AI 建议回复」分栏，计数与今日必看对齐\n- AI 建议、@我和普通话题留在微信消息，不直接进入今日必看\n- AI 建议待办进入微信消息的「待确认」区，用户确认后才进入今日必看\n- 微信消息单会话话题按日分组，默认只展开今天，其他日期和更早话题收起分页\n- 锁定事件的变更先确认，不再自动改写标题、时间、地点和提醒\n- 微信消息会话卡优先展示活跃待办，后发普通话题不会顶替待办\n- 今日必看增加筛选、批量完成/忽略、最近处理和标题纠正\n- 修复确认框、诊断导出、侧车端口和 WebView2 恢复问题\n- AI API Key 迁移到 Windows 凭据管理器\n- 历史数据支持按 30/90/180 天手动清理",
-  "pub_date": "2026-10-18T11:07:37Z",
+  "version": "2.2.0",
+  "notes": "喵秘书 v2.2.0\n\n- 微信账号独立命名空间：切换账号后会话、联系人、群聊、监控和历史数据互不串号\n- 自动识别微信切号并提示选择，切回旧账号可恢复旧历史\n- 每个账号独立密钥、解密缓存和本地数据库，修复多账号环境下的解密失败与串号\n- 联系人列表只显示真实好友，群聊列表只显示本人已加入的群，修复显示不全、混入群成员/系统账号/未加入群的问题\n- 会话名称与备注按当前账号解析，修复切号后名称变成 wxid、备注丢失\n- 重新连接优先复用有效密钥，减少卡顿\n- 安装器升级前自动关闭旧进程，修复安装时无法写入\n- 由于更新签名密钥更换，2.1.0 用户请手动安装一次 2.2.0，之后可继续自动更新",
+  "pub_date": "2026-10-18T17:34:39Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTNG9SYUZiZHRzcGJ1eDR5b2p1TmIrUXFXZHFGTEpiRWc4NGRsWEpQcG9PNjFXdDBZVXN5Z1c2ZmlzWWJ4MDl4OVpINXUwdlJkSGpWRWFsc25JS0JXa25XZnNFWUg4UlFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMzIxNjQ0CWZpbGU65Za156eY5LmmXzIuMS4wX3g2NC1zZXR1cC5leGUKV3NZRm5mV2w2T2N2TnI0YmJlL0VxUTRzdVJEWGFwOE9HYzhkZGR2bUtINTA3WU1oeGRJVFdFWm9adGJEd1RCa1Z4WThFNzhMSDdySG9zOFNWdGdlQ3c9PQo=",
-      "url": "https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v2.1.0/miao-secretary_2.1.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTalhvd0srNDVCcURSREZmL1l5OG1YTzBrNThXakx6U3NZRlRBbC9IdXNKdm8zTFRETERVZEtBMkV0NTNNSlBCVlhDR3dFaWRjRWt6NzI0MCtBeVJLenByS3RndlhrcWc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMzQ0ODQ3CWZpbGU65Za156eY5LmmXzIuMi4wX3g2NC1zZXR1cC5leGUKUjh2cTloOWZhNzdnNXhJaS9GMlM5V2RmSFduQTdOdEw4S09iakhyT1VhT2RhL05XNlhDNWo2c202Z0xSMndReXpQNHcwa2svVC80TWFrT2VBZ3pFQnc9PQo=",
+      "url": "https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v2.2.0/miao-secretary_2.2.0_x64-setup.exe"
     }
   }
 }
