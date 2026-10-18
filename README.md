@@ -48,12 +48,13 @@
 
 ##  :santa:  图片展示
 
-![1](docs/1.jpg)
-![2](docs/2.jpg)
-![3](docs/3.jpg)
-![4](docs/4.jpg)
-![5](docs/5.jpg)
-![6](docs/6.jpg)
+![1](docs/1.png)
+![2](docs/2.png)
+![3](docs/3.png)
+![4](docs/4.png)
+![5](docs/5.png)
+![6](docs/6.png)
+![7](docs/7.png)
 
 ## 🚀 从源码开发
 
