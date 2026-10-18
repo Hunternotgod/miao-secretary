@@ -38,7 +38,7 @@ jobs:
         run: |
           set -euo pipefail
           version="${TAG#v}"
-          asset="喵秘书_${version}_x64-setup.exe"
+          asset="miao-secretary_${version}_x64-setup.exe"
           api="https://gitee.com/api/v5/repos/fat-cat-barbecue/miao-secretary/releases?per_page=100"
           curl --fail --silent --show-error --location --retry 5 --retry-all-errors \
             --connect-timeout 30 --max-time 180 \
@@ -62,7 +62,7 @@ jobs:
         run: |
           set -euo pipefail
           version="${TAG#v}"
-          asset="喵秘书_${version}_x64-setup.exe"
+          asset="miao-secretary_${version}_x64-setup.exe"
           if gh release view "$TAG" >/dev/null 2>&1; then
             gh release upload "$TAG" "$asset" --clobber
           else
