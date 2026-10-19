@@ -2,7 +2,7 @@
 
 ## :link: 版本下载
 
-- **最新版 v2.2.1（稳定版）**：[下载最新版](https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v2.2.1/miao-secretary_2.2.1_x64-setup.exe)
+- **最新版 v2.2.2（稳定版）**：[下载最新版](https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v2.2.2/miao-secretary_2.2.2_x64-setup.exe)
 
 历史版本请见 [Releases](https://gitee.com/fat-cat-barbecue/miao-secretary/releases)。
 
@@ -10,7 +10,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Platform: Windows](https://img.shields.io/badge/Platform-Windows-blue)](https://gitee.com/fat-cat-barbecue/miao-secretary)
-[![Version](https://img.shields.io/badge/Version-2.2.1%20stable-green)](https://gitee.com/fat-cat-barbecue/miao-secretary/releases)
+[![Version](https://img.shields.io/badge/Version-2.2.2%20stable-green)](https://gitee.com/fat-cat-barbecue/miao-secretary/releases)
 
 ## 这是什么
 ![喵秘书](docs/tupian.png)
@@ -25,15 +25,16 @@
 
 > **核心场景**：班级群通知、社团活动、课程变更、招聘推送 —— 这些「不看会死，看了又烦」的消息，喵秘书替你筛。
 
-## v2.2.1 最新版更新
+## v2.2.2 最新版更新
 
-- 修复重新同步微信消息后，逾期或发生变化的历史话题自动加入「今日必看」的问题；
-- 重新同步到的旧消息不再触发事件变更确认，只有真正的新消息才会提示；
-- 「今日必看」卡片和「最近处理」记录新增删除入口，并支持批量删除；
-- 删除后的事件会保留移除标记，后续重新同步不会自动复活；
-- 系统通知角标和每日简报不再包含已删除或已处理的历史变更。
+- 微信消息同步时，已整理且内容未变化的批次直接复用缓存，不再重复调用 AI；
+- 修复重复同步时同一批消息反复触发新消息提醒的问题；
+- 「重新分析这条」只处理当前一条整理结果，不再重扫整个群的历史消息，节省 Token；
+- 设置 → 数据新增 AI Token 用量统计，可查看累计、今日、输入、输出 Token 和实际请求次数；
+- 命中缓存不计入 Token，用量统计支持手动清空；
+- 继续保留 2.2.1 的历史话题不自动复活、已处理记录可删除等修复。
 
-> v2.2.1 为当前最新版，也是推荐使用的稳定版。
+> v2.2.2 为当前最新版，也是推荐使用的稳定版。
 
 ## 微信连接说明（重要）
 

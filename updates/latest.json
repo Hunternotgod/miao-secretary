@@ -1,11 +1,11 @@
 {
-  "version": "2.2.1",
-  "notes": "喵秘书 v2.2.1\n\n- 修复重新同步微信消息后，逾期或发生变化的历史话题自动进入「今日必看」\n- 重新同步到的旧消息不再触发事件变更确认，只有真正的新消息才会提示\n- 「今日必看」卡片和「最近处理」记录新增删除入口，支持批量删除\n- 删除后的事件会保留移除标记，后续重新同步不会自动复活\n- 系统通知角标和每日简报不再包含已删除或已处理的历史变更",
-  "pub_date": "2026-10-19T09:40:00Z",
+  "version": "2.2.2",
+  "notes": "喵秘书 v2.2.2\n\n- 微信消息同步时，已整理且内容未变化的批次直接复用缓存，不再重复调用 AI\n- 修复重复同步时同一批消息反复触发新消息提醒的问题\n- 「重新分析这条」只处理当前一条整理结果，不再重扫整个群的历史消息，节省 Token\n- 设置 → 数据新增 AI Token 用量统计，可查看累计、今日、输入、输出 Token 和实际请求次数\n- 命中缓存不计入 Token，用量统计支持手动清空\n- 继续保留 2.2.1 的历史话题不自动复活、已处理记录可删除等修复",
+  "pub_date": "2026-10-19T10:12:02Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTalhvd0srNDVCcUx4L1F6QnhmWFZ1d0tPNGZKTERlS3NucWJ1VUxQSUY2YnVyL0pDdm40RTN0TnVEZTB3VVNUV2xvZGpVNndiTFJXTUp1N0NWTk5oVFdtRUFXbjFJREFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNDAyNzU2CWZpbGU65Za156eY5LmmXzIuMi4xX3g2NC1zZXR1cC5leGUKSFhlZ1hZYmhRZlhoZUdkN2RnSDR3b01GREZpNUY1K1BGcE9jcUhEN2hUNU9jd3ZYUkJxdmtwRVMyTExQLzV5bHIyaXV4UVl4aWM0Nkora0ZkQmNMQUE9PQo=",
-      "url": "https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v2.2.1/miao-secretary_2.2.1_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTalhvd0srNDVCcUZ6ck5pcXBZNFpVU0o3RHFLZjVabWV3Z045VDJvdC95aG56Wmp4Tk44Q3VDVE1vRU1mL1RTelNyd3dIT3F5UGV1ek9RQXk3cWREOG9TekQ1a216TncwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNDA0NzE0CWZpbGU65Za156eY5LmmXzIuMi4yX3g2NC1zZXR1cC5leGUKaFFadkpLbUtjR2VneWhwa2VvQklaRWpKR1pka1NoaUJXSDJQQmd0b1RNOEpyWlZ2aUpneHJ0VkVpN2NxZEdibHdzTUpveEYxODBQd0RIMUdDeDhRRGc9PQo=",
+      "url": "https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v2.2.2/miao-secretary_2.2.2_x64-setup.exe"
     }
   }
 }
