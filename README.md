@@ -2,7 +2,7 @@
 
 ## :link: 版本下载
 
-- **最新版 v2.2.0（稳定版）**：[下载最新版](https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v2.2.0/miao-secretary_2.2.0_x64-setup.exe)
+- **最新版 v2.2.1（稳定版）**：[下载最新版](https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v2.2.1/miao-secretary_2.2.1_x64-setup.exe)
 
 历史版本请见 [Releases](https://gitee.com/fat-cat-barbecue/miao-secretary/releases)。
 
@@ -10,7 +10,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Platform: Windows](https://img.shields.io/badge/Platform-Windows-blue)](https://gitee.com/fat-cat-barbecue/miao-secretary)
-[![Version](https://img.shields.io/badge/Version-2.2.0%20stable-green)](https://gitee.com/fat-cat-barbecue/miao-secretary/releases)
+[![Version](https://img.shields.io/badge/Version-2.2.1%20stable-green)](https://gitee.com/fat-cat-barbecue/miao-secretary/releases)
 
 ## 这是什么
 ![喵秘书](docs/tupian.png)
@@ -25,17 +25,15 @@
 
 > **核心场景**：班级群通知、社团活动、课程变更、招聘推送 —— 这些「不看会死，看了又烦」的消息，喵秘书替你筛。
 
-## v2.2.0 最新版更新
+## v2.2.1 最新版更新
 
-- 微信账号独立命名空间：切换账号后会话、联系人、群聊、监控和历史数据互不串号；
-- 自动识别微信切号并提示选择，切回旧账号可恢复旧历史；
-- 每个账号独立密钥、解密缓存和本地数据库，修复多账号环境下的解密失败与串号；
-- 联系人列表只显示真实好友，群聊列表只显示本人已加入的群，修复显示不全、混入群成员/系统账号/未加入群的问题；
-- 会话名称与备注按当前账号解析，修复切号后名称变成 wxid、备注丢失；
-- 重新连接优先复用有效密钥，减少卡顿；
-- 安装器升级前自动关闭旧进程，修复安装时无法写入。
+- 修复重新同步微信消息后，逾期或发生变化的历史话题自动加入「今日必看」的问题；
+- 重新同步到的旧消息不再触发事件变更确认，只有真正的新消息才会提示；
+- 「今日必看」卡片和「最近处理」记录新增删除入口，并支持批量删除；
+- 删除后的事件会保留移除标记，后续重新同步不会自动复活；
+- 系统通知角标和每日简报不再包含已删除或已处理的历史变更。
 
-> v2.2.0 为当前最新版，也是推荐使用的稳定版。
+> v2.2.1 为当前最新版，也是推荐使用的稳定版。
 
 ## 微信连接说明（重要）
 

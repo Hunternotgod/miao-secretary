@@ -1,11 +1,11 @@
 {
-  "version": "2.2.0",
-  "notes": "⚠️ 2.1.0 用户不要点“立即更新”！\n2.2.0 更换了更新签名密钥，2.1.0 的自动更新会失败。\n请关闭更新窗口，手动下载安装 2.2.0：\nhttps://gitee.com/fat-cat-barbecue/miao-secretary/releases/tag/v2.2.0\n\n安装一次 2.2.0 后，后续版本可继续自动更新。\n\n———\n喵秘书 v2.2.0\n- 微信账号独立命名空间，切号后会话、联系人、群聊、监控和历史数据互不串号\n- 联系人只显示真实好友，群聊只显示本人已加入的群\n- 修复切号后名称变成 wxid、备注丢失\n- 重新连接优先复用有效密钥，减少卡顿\n- 安装器升级前自动关闭旧进程，修复安装时无法写入",
-  "pub_date": "2026-10-18T17:34:39Z",
+  "version": "2.2.1",
+  "notes": "喵秘书 v2.2.1\n\n- 修复重新同步微信消息后，逾期或发生变化的历史话题自动进入「今日必看」\n- 重新同步到的旧消息不再触发事件变更确认，只有真正的新消息才会提示\n- 「今日必看」卡片和「最近处理」记录新增删除入口，支持批量删除\n- 删除后的事件会保留移除标记，后续重新同步不会自动复活\n- 系统通知角标和每日简报不再包含已删除或已处理的历史变更",
+  "pub_date": "2026-10-19T09:40:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTalhvd0srNDVCcURSREZmL1l5OG1YTzBrNThXakx6U3NZRlRBbC9IdXNKdm8zTFRETERVZEtBMkV0NTNNSlBCVlhDR3dFaWRjRWt6NzI0MCtBeVJLenByS3RndlhrcWc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMzQ0ODQ3CWZpbGU65Za156eY5LmmXzIuMi4wX3g2NC1zZXR1cC5leGUKUjh2cTloOWZhNzdnNXhJaS9GMlM5V2RmSFduQTdOdEw4S09iakhyT1VhT2RhL05XNlhDNWo2c202Z0xSMndReXpQNHcwa2svVC80TWFrT2VBZ3pFQnc9PQo=",
-      "url": "https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v2.2.0/miao-secretary_2.2.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTalhvd0srNDVCcUx4L1F6QnhmWFZ1d0tPNGZKTERlS3NucWJ1VUxQSUY2YnVyL0pDdm40RTN0TnVEZTB3VVNUV2xvZGpVNndiTFJXTUp1N0NWTk5oVFdtRUFXbjFJREFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNDAyNzU2CWZpbGU65Za156eY5LmmXzIuMi4xX3g2NC1zZXR1cC5leGUKSFhlZ1hZYmhRZlhoZUdkN2RnSDR3b01GREZpNUY1K1BGcE9jcUhEN2hUNU9jd3ZYUkJxdmtwRVMyTExQLzV5bHIyaXV4UVl4aWM0Nkora0ZkQmNMQUE9PQo=",
+      "url": "https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v2.2.1/miao-secretary_2.2.1_x64-setup.exe"
     }
   }
 }
