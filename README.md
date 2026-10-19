@@ -2,7 +2,7 @@
 
 ## :link: 版本下载
 
-- **最新版 v2.2.2（稳定版）**：[下载最新版](https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v2.2.2/miao-secretary_2.2.2_x64-setup.exe)
+- **最新版 v2.2.3（稳定版）**：[下载最新版](https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v2.2.3/miao-secretary_2.2.3_x64-setup.exe)
 
 历史版本请见 [Releases](https://gitee.com/fat-cat-barbecue/miao-secretary/releases)。
 
@@ -10,7 +10,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Platform: Windows](https://img.shields.io/badge/Platform-Windows-blue)](https://gitee.com/fat-cat-barbecue/miao-secretary)
-[![Version](https://img.shields.io/badge/Version-2.2.2%20stable-green)](https://gitee.com/fat-cat-barbecue/miao-secretary/releases)
+[![Version](https://img.shields.io/badge/Version-2.2.3%20stable-green)](https://gitee.com/fat-cat-barbecue/miao-secretary/releases)
 
 ## 这是什么
 ![喵秘书](docs/tupian.png)
@@ -25,16 +25,17 @@
 
 > **核心场景**：班级群通知、社团活动、课程变更、招聘推送 —— 这些「不看会死，看了又烦」的消息，喵秘书替你筛。
 
-## v2.2.2 最新版更新
+## v2.2.3 最新版更新
 
-- 微信消息同步时，已整理且内容未变化的批次直接复用缓存，不再重复调用 AI；
-- 修复重复同步时同一批消息反复触发新消息提醒的问题；
-- 「重新分析这条」只处理当前一条整理结果，不再重扫整个群的历史消息，节省 Token；
-- 设置 → 数据新增 AI Token 用量统计，可查看累计、今日、输入、输出 Token 和实际请求次数；
-- 命中缓存不计入 Token，用量统计支持手动清空；
-- 继续保留 2.2.1 的历史话题不自动复活、已处理记录可删除等修复。
+- 诊断报告新增 AI 分析，放在报告最上方，先给出结论、可能原因和操作建议；
+- 增加运行状态、同步错误、最近日志、目录信息、环境信息和结构化快照，方便开发者快速定位；
+- 前端异常、本地服务失败、同步错误和 AI 调用失败时主动提示导出诊断报告；
+- 诊断报告自动隐藏密钥、Token、手机号等敏感信息；
+- 修复今日必看卡片嵌套按钮问题，移除重复的刷新和拆分/合并入口；
+- 统一各页面标题图标、筛选器颜色、按钮尺寸、点击区域和响应式布局；
+- 继续保留 2.2.2 的缓存复用、重复提醒修复、单条重新分析和 Token 用量统计。
 
-> v2.2.2 为当前最新版，也是推荐使用的稳定版。
+> v2.2.3 为当前最新版，也是推荐使用的稳定版。
 
 ## 微信连接说明（重要）
 

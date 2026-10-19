@@ -1,11 +1,11 @@
 {
-  "version": "2.2.2",
-  "notes": "喵秘书 v2.2.2\n\n- 微信消息同步时，已整理且内容未变化的批次直接复用缓存，不再重复调用 AI\n- 修复重复同步时同一批消息反复触发新消息提醒的问题\n- 「重新分析这条」只处理当前一条整理结果，不再重扫整个群的历史消息，节省 Token\n- 设置 → 数据新增 AI Token 用量统计，可查看累计、今日、输入、输出 Token 和实际请求次数\n- 命中缓存不计入 Token，用量统计支持手动清空\n- 继续保留 2.2.1 的历史话题不自动复活、已处理记录可删除等修复",
-  "pub_date": "2026-10-19T10:12:02Z",
+  "version": "2.2.3",
+  "notes": "喵秘书 v2.2.3\n\n- 诊断报告新增 AI 分析，放在报告最上方，先给出结论、可能原因和操作建议\n- 增加运行状态、同步错误、最近日志、目录信息、环境信息和结构化快照，方便开发者快速定位\n- 前端异常、本地服务失败、同步错误和 AI 调用失败时主动提示导出诊断报告\n- 诊断报告自动隐藏密钥、Token、手机号等敏感信息\n- 修复今日必看卡片嵌套按钮问题，移除重复的刷新和拆分/合并入口\n- 统一各页面标题图标、筛选器颜色、按钮尺寸、点击区域和响应式布局\n- 继续保留 2.2.2 的缓存复用、重复提醒修复、单条重新分析和 Token 用量统计",
+  "pub_date": "2026-10-19T11:10:31Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTalhvd0srNDVCcUZ6ck5pcXBZNFpVU0o3RHFLZjVabWV3Z045VDJvdC95aG56Wmp4Tk44Q3VDVE1vRU1mL1RTelNyd3dIT3F5UGV1ek9RQXk3cWREOG9TekQ1a216TncwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNDA0NzE0CWZpbGU65Za156eY5LmmXzIuMi4yX3g2NC1zZXR1cC5leGUKaFFadkpLbUtjR2VneWhwa2VvQklaRWpKR1pka1NoaUJXSDJQQmd0b1RNOEpyWlZ2aUpneHJ0VkVpN2NxZEdibHdzTUpveEYxODBQd0RIMUdDeDhRRGc9PQo=",
-      "url": "https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v2.2.2/miao-secretary_2.2.2_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTalhvd0srNDVCcURNRkY2QU82NURTYmV5VldJVFRaU1RDYVg2R3FrUmlIMFNMZmtPL2hYMFVUVmNxNG9zSWlxT3pwcy9hK2xQZ2t4aVhpeHdMQmwwK2ZGTi92bDhvdndBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNDA4MjIzCWZpbGU65Za156eY5LmmXzIuMi4zX3g2NC1zZXR1cC5leGUKbTV5MlVZeHJaamk0NnE3UGNkSStPOHFjYy91b1pGeGVOV0dQUDN2TDI3c3gyZWVoeGlJb1g2SHVoKzc4eld3QTFRN240UzhwbHAyMzc1aEtPQTBvQ2c9PQo=",
+      "url": "https://gitee.com/fat-cat-barbecue/miao-secretary/releases/download/v2.2.3/miao-secretary_2.2.3_x64-setup.exe"
     }
   }
 }
